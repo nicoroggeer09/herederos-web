@@ -14,28 +14,28 @@ const BRAND = {
 };
 
 const EVENTOS = [
-  { date: "2025-12-05", titulo: "Peña de Apertura", detalle: "Diablito Martinez, Pancho Fuentes, Herederos", hora: "21:00", precio: "$8.000", etiquetas: ["peña","en vivo"] },
-  { date: "2025-11-07", titulo: "Noche de Chacarera", detalle: "Ballet invitado + guitarreada", hora: "22:00", precio: "$8.000", etiquetas: ["danza"] },
-  { date: "2025-11-09", titulo: "Domingo Familiar", detalle: "Empanadas y folklore estilizado", hora: "20:30", precio: "$0", etiquetas: ["promo"] },
-  { date: "2025-11-15", titulo: "Dúo Pampa", detalle: "Guitarras y canto surero", hora: "21:30", precio: "$10.000", etiquetas: ["en vivo"] },
-  { date: "2025-11-22", titulo: "Peña de la Tradición", detalle: "Zonas de baile + sorteo", hora: "21:00", precio: "$10.000", etiquetas: ["peña"] },
-  { date: "2025-11-29", titulo: "Cierre del Mes", detalle: "Ballet Herederos + invitados", hora: "21:00", precio: "$10.000", etiquetas: ["en vivo"] },
+  { date: "2025-12-05", titulo: "Gran Apertura", detalle: "Diablito Martinez, Pancho Fuentes, Herederos", hora: "20:30", precio: "$8.000", etiquetas: ["peña","en vivo"] },
+  { date: "2025-12-06", titulo: "Peña", detalle: "Manu Garcia Pereyra, Martin Barraza, Herederos", hora: "20:30", precio: "$8.000", etiquetas: ["peña"] },
+  { date: "2025-12-07", titulo: "Domingo Peñero", detalle: "Martin Graf, Nico Centineo, Herederos", hora: "20:30", precio: "$8000", etiquetas: ["peña"] },
+  { date: "2025-12-12", titulo: "Peña", detalle: "Paloma Pacheco, Duo Fernandez-Orioli, Sincopa", hora: "20:30", precio: "$8.000", etiquetas: ["en vivo"] },
+  { date: "2025-12-13", titulo: "Peña", detalle: "Carolina Centurión, La Voladura, Herederos", hora: "20:30", precio: "$8.000", etiquetas: ["peña"] },
+  { date: "2025-12-14", titulo: "Domingo Peñero", detalle: "Franco Coria, Campero Campero, Los de Ahora", hora: "20:30", precio: "$8.000", etiquetas: ["en vivo"] },
 ];
 
 const GALERIA = [
-  { src: "https://images.unsplash.com/photo-1521337586134-df01dd7dd0c1", alt: "Peña criolla" },
+  { src: "https://images.unsplash.com/photo-1521337586134-df01dd7dd0c1", alt: "Peña" },
   { src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3", alt: "Guitarras" },
-  { src: "https://images.unsplash.com/photo-1560944527-a4a429848866", alt: "Bombo y danza" },
+  { src: "https://images.unsplash.com/photo-1560944527-a4a429848866", alt: "Bombo" },
   { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836", alt: "Mesa criolla" },
-  { src: "https://images.unsplash.com/photo-1559339352-11d035aa65de", alt: "Empanadas" },
+  { src: "https://images.unsplash.com/photo-1559339352-11d035aa65de", alt: "vivo" },
   { src: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218", alt: "Peña – escenario" },
 ];
 
 const SPONSORS = [
-  { nombre: "RotiFolk", logo: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5", url: "#" },
-  { nombre: "FM Tradición", logo: "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe", url: "#" },
-  { nombre: "El Gaucho Indumentaria", logo: "https://images.unsplash.com/photo-1520975722210-4ca376c0122e", url: "#" },
-  { nombre: "Mercado de la Esquina", logo: "https://images.unsplash.com/photo-1542831371-29b0f74f9713", url: "#" },
+  { nombre: "Pinturerias centro", logo: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5", url: "#" },
+  { nombre: "Tubos Olavarria", logo: "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe", url: "#" },
+  { nombre: "Tu Dolar", logo: "https://images.unsplash.com/photo-1520975722210-4ca376c0122e", url: "#" },
+  { nombre: "Grizly", logo: "https://images.unsplash.com/photo-1542831371-29b0f74f9713", url: "#" },
 ];
 
 function getMonthMatrix(year, month) {
