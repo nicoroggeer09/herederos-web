@@ -1,5 +1,8 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { themes, fonts } from "./theme";
+
 import { CalendarDays, MapPin, Phone, Instagram, Facebook, Music2, Ticket, ChevronLeft, ChevronRight, Images, Info, GalleryHorizontalEnd, Megaphone, ExternalLink } from "lucide-react";
 
 const BRAND = {
