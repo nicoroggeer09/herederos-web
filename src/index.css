@@ -3,3 +3,55 @@
 @tailwind utilities;
 
 :root { color-scheme: light; }
+/* ====== THEME VARIABLES ====== */
+:root {
+  /* paleta clara “Folklore Día” */
+  --bg: #fffaf1;
+  --card: #ffffff;
+  --border: #e7e0d3;
+  --text: #1f1b16;
+  --muted: #6b6257;
+
+  --brand: #9b6b2b;      /* dorado-mate */
+  --brand-ink: #ffffff;  /* texto sobre brand */
+
+  --font-display: "Cinzel", serif;
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* tema oscuro “Peña Noche” */
+.theme-night {
+  --bg: #0e0d0b;
+  --card: #15130f;
+  --border: #2a251c;
+  --text: #f4efe8;
+  --muted: #b8aea0;
+
+  --brand: #e7b35b;
+  --brand-ink: #1c1408;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Utilidades para Tailwind con variables (arbitrary values) */
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+.bg-app { background: var(--bg); }
+.bg-card { background: var(--card); }
+.text-app { color: var(--text); }
+.text-muted { color: var(--muted); }
+.border-app { border-color: var(--border); }
+
+/* Botón de marca genérico */
+.btn-brand {
+  background: var(--brand);
+  color: var(--brand-ink);
+}
+.btn-brand:hover { filter: brightness(0.95); }
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+}
