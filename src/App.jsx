@@ -6,15 +6,15 @@ const BRAND = {
   nombre: "Herederos Bar Folklórico",
   slogan: "Peña, comida criolla y música en vivo",
   direccion: "Av. Ituzaingó 2219, Olavarría, Buenos Aires",
-  telefono: "+54 9 2284 000000",
+  telefono: "+54 9 2284 619488",
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
-  whatsapp: "https://wa.me/5492284000000",
+  whatsapp: "https://wa.me/5492284619488",
   entradasLink: "#entradas",
 };
 
 const EVENTOS = [
-  { date: "2025-11-01", titulo: "Peña de Apertura", detalle: "Zamba, chacarera y patio criollo", hora: "21:00", precio: "$8.000", etiquetas: ["peña","en vivo"] },
+  { date: "2025-12-05", titulo: "Peña de Apertura", detalle: "Diablito Martinez, Pancho Fuentes, Herederos", hora: "21:00", precio: "$8.000", etiquetas: ["peña","en vivo"] },
   { date: "2025-11-07", titulo: "Noche de Chacarera", detalle: "Ballet invitado + guitarreada", hora: "22:00", precio: "$8.000", etiquetas: ["danza"] },
   { date: "2025-11-09", titulo: "Domingo Familiar", detalle: "Empanadas y folklore estilizado", hora: "20:30", precio: "$0", etiquetas: ["promo"] },
   { date: "2025-11-15", titulo: "Dúo Pampa", detalle: "Guitarras y canto surero", hora: "21:30", precio: "$10.000", etiquetas: ["en vivo"] },
