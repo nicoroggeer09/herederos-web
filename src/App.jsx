@@ -386,40 +386,81 @@ export default function App() {
       </section>
 
       {/* CONTACTO */}
-      <div className="mt-6 rounded-2xl bg-neutral-50 p-4 border text-sm text-neutral-600">
-  <p className="font-semibold mb-1">Mapa</p>
-  <div className="rounded-lg overflow-hidden">
-    <iframe
-      src="https://www.google.com/maps/@-36.8894674,-60.3371581,47m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D"
-      width="100%"
-      height="300"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
-</div>
+<section id="contacto" className="py-14 bg-white border-t">
+  <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+    
+    {/* Columna izquierda: información */}
+    <div>
+      <h2 className="text-2xl md:text-3xl font-extrabold">Contacto</h2>
+      <p className="mt-2 text-neutral-700">Reservas, prensa, sponsors y artistas.</p>
 
-          <div className="rounded-2xl border border-app bg-card">
-            <div className="p-4 border-b border-app">
-              <div className="text-base font-semibold">Escribinos</div>
-            </div>
-            <div className="p-4">
-              <form onSubmit={(e) => e.preventDefault()} className="space-y-3">
-                <input placeholder="Nombre" className="w-full border border-app rounded-lg p-2 bg-card" />
-                <input placeholder="Email o teléfono" className="w-full border border-app rounded-lg p-2 bg-card" />
-                <textarea placeholder="Tu consulta" rows={5} className="w-full border border-app rounded-lg p-2 bg-card"></textarea>
-                <div className="flex gap-2">
-                  <button className="px-3 py-2 rounded-2xl btn-brand text-sm">Enviar</button>
-                  <a href={BRAND.whatsapp} target="_blank" rel="noreferrer" className="px-3 py-2 rounded-2xl btn-ghost text-sm">Whatsapp</a>
-                </div>
-                <p className="text-xs text-muted">Este formulario es de ejemplo. Podés vincularlo con Formspree, Getform, Google Forms o tu backend.</p>
-              </form>
-            </div>
-          </div>
+      <div className="mt-4 space-y-2 text-sm text-neutral-700">
+        <p className="flex items-center gap-2">
+          <MapPin className="h-4 w-4"/>{BRAND.direccion}
+        </p>
+        <p className="flex items-center gap-2">
+          <Phone className="h-4 w-4"/>{BRAND.telefono}
+        </p>
+      </div>
+
+      <div className="mt-4 flex gap-3">
+        <a href={BRAND.instagram} className="inline-flex items-center gap-2 text-neutral-700 hover:text-neutral-900 text-sm">
+          <Instagram className="h-4 w-4"/>Instagram
+        </a>
+        <a href={BRAND.facebook} className="inline-flex items-center gap-2 text-neutral-700 hover:text-neutral-900 text-sm">
+          <Facebook className="h-4 w-4"/>Facebook
+        </a>
+      </div>
+
+      {/* Mapa de ubicación */}
+      <div className="mt-6 rounded-2xl bg-neutral-50 p-4 border text-sm text-neutral-600">
+        <p className="font-semibold mb-1">Mapa</p>
+        <div className="rounded-lg overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.189377938917!2d-60.33597168478272!3d-36.89543127992614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bfc9ff91f5e4a1%3A0x3f73e7c35e7e41b9!2sAv.%20Ituzaing%C3%B3%202219%2C%20B7400%20Olavarr%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730240000000!5m2!1ses-419!2sar"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* Columna derecha: formulario */}
+    <div className="rounded-2xl border bg-white">
+      <div className="p-4 border-b">
+        <div className="text-base font-semibold">Escribinos</div>
+      </div>
+      <div className="p-4">
+        <form onSubmit={(e) => e.preventDefault()} className="space-y-3">
+          <input placeholder="Nombre" className="w-full border rounded-lg p-2"/>
+          <input placeholder="Email o teléfono" className="w-full border rounded-lg p-2"/>
+          <textarea placeholder="Tu consulta" rows={5} className="w-full border rounded-lg p-2"></textarea>
+          
+          <div className="flex gap-2">
+            <button className="px-3 py-2 rounded-2xl bg-black text-white text-sm">Enviar</button>
+            <a
+              href={BRAND.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-2 rounded-2xl border text-sm flex items-center gap-2"
+            >
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="h-4 w-4"/>
+              WhatsApp
+            </a>
+          </div>
+
+          <p className="text-xs text-neutral-500">
+            Este formulario es de ejemplo. Podés vincularlo con Formspree, Getform, Google Forms o tu backend.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="py-8 bg-card border-t border-app">
