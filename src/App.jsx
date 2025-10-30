@@ -211,7 +211,8 @@ export default function App() {
 
           <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-card">
-              <img src="/img/bar-herederos-socios.png" alt="Socios" className="w-full h-full object-cover"/>
+             <img src="./img/bar-herederos-socios.png" alt="Socios" className="w-full h-full object-cover" />
+
 
             </div>
             <div className="absolute -bottom-5 -left-5 bg-card rounded-2xl shadow p-4 flex items-center gap-3 border border-app">
