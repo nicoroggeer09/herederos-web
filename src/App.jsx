@@ -40,11 +40,11 @@ const EVENTOS = [
 ];
 
 const GALERIA = [
-  { src: "https://images.unsplash.com/photo-1521337586134-df01dd7dd0c1", alt: "Peña" },
+  { src: "https://www.google.com/search?sca_esv=c5d665130b0b830b&sxsrf=AE3TifMEcMCXNFL1FlyAN4X88s2CxMyzag:1761828645220&udm=2&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQht6_BFq6vBIoFFRK7qchKEWEvuc0Hbw31oEI7c8o3y4MyqtV5m4rLCGDMco7dQbsONdCIMLjZ0gi6g9hpm4RRsaosOQ7eLTuGxizQaF7hceYKEla2HKPGlBgU4OvWyomMh-umsoGftdR3dJAX0-Fdinx349QAtTOnqiwcry-D8DwlTKr4sWWAJ6036O_6ijnc_vsbTlh9irOpZbv0Vsj2UvRjVo&q=bailarines+de+folklore+argentino&sa=X&ved=2ahUKEwiHw7aU-8uQAxWDJrkGHRAPCKsQtKgLegQIDxAB&biw=1536&bih=730&dpr=1.25#vhid=GB982kI4smCVnM&vssid=mosaic", alt: "Peña" },
   { src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3", alt: "Guitarras" },
   { src: "https://images.unsplash.com/photo-1560944527-a4a429848866", alt: "Bombo" },
   { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836", alt: "Mesa criolla" },
-  { src: "https://images.unsplash.com/photo-1559339352-11d035aa65de", alt: "vivo" },
+  { src: "https://www.google.com/search?sca_esv=c5d665130b0b830b&sxsrf=AE3TifNT6dIAoMSRNERpVzWrxB_VDZah5g:1761828720068&udm=2&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQht6_BFq6vBIoFFRK7qchKEWEvuc0Hbw31oEI7c8o3y4MyqtV5m4rLCGDMco7dQbsn3LCPjOfwb34Pr7sZ7pnauehRDjNOdpWeExNj8fK5gCRXZR3_oViZRzzJuHnoxG6fDf27ntF_ZLVrj_AZydajcNgnwure3rAsK8vIX0EppJQL6RySFkMLVaZZL_a8M4pjjsssg&q=diablito+martinez&sa=X&sqi=2&ved=2ahUKEwjb7464-8uQAxWFHLkGHTO9O4kQtKgLegQIExAB#vhid=UvixDxO9EJDh2M&vssid=mosaic", alt: "vivo" },
   { src: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218", alt: "Peña – escenario" },
 ];
 
