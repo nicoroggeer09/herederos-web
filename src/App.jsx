@@ -1,11 +1,20 @@
 // src/App.jsx
 import React, { useMemo, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { themes, fonts } from "./theme.js";
 import {
   CalendarDays, MapPin, Phone, Instagram, Facebook, Music2, Ticket,
   ChevronLeft, ChevronRight, Images, Info, GalleryHorizontalEnd, Megaphone, ExternalLink
 } from "lucide-react";
+const themes = {
+  day:   { className: "",            label: "Folklore Día" },
+  night: { className: "theme-night", label: "Peña Noche" },
+  // si después agregamos más, van acá (ej. "viola")
+};
+
+const fonts = {
+  gaucha:  { display: '"Cinzel", serif', body: '"Inter", sans-serif', label: "Cinzel + Inter" },
+  moderna: { display: '"Inter", sans-serif', body: '"Inter", sans-serif', label: "Inter (moderna)" },
+};
 
 /* =========================
    Datos del sitio
