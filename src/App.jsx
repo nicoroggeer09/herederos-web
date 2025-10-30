@@ -8,7 +8,7 @@ import {
 const themes = {
   day:   { className: "",            label: "Folklore Día" },
   night: { className: "theme-night", label: "Peña Noche" },
-  // si después agregamos más, van acá (ej. "viola")
+  // si después agregamos más, van acá ")
 };
 
 const fonts = {
