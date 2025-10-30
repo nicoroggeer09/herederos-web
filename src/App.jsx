@@ -91,6 +91,25 @@ export default function App() {
     EVENTOS.forEach((e) => {
       map.set(e.date, (map.get(e.date) || []).concat(e));
     });
+    // Tema y fuente (guardados en localStorage)
+const [themeKey, setThemeKey] = useState(localStorage.getItem("hbf_theme") || "day");
+const [fontKey, setFontKey] = useState(localStorage.getItem("hbf_font") || "gaucha");
+
+useEffect(() => {
+  // aplicar clase de tema al <html>
+  const html = document.documentElement;
+  html.classList.remove("theme-night", "theme-viola");
+  const cn = themes[themeKey]?.className || "";
+  if (cn) html.classList.add(cn);
+  localStorage.setItem("hbf_theme", themeKey);
+
+  // aplicar fuentes a variables CSS
+  const f = fonts[fontKey] || fonts.gaucha;
+  document.documentElement.style.setProperty("--font-display", f.display);
+  document.documentElement.style.setProperty("--font-body", f.body);
+  localStorage.setItem("hbf_font", fontKey);
+}, [themeKey, fontKey]);
+
     return map;
   }, []);
 
@@ -106,7 +125,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-900">
+   + <div className="min-h-screen bg-app text-app font-body">
       {/* NAV */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -119,8 +138,38 @@ export default function App() {
             <a href="#contacto" className="hover:text-neutral-700 flex items-center gap-2"><GalleryHorizontalEnd className="h-4 w-4"/>Contacto</a>
           </nav>
           <div className="flex items-center gap-2">
-            <a href={BRAND.entradasLink} className="inline-flex items-center px-3 py-2 rounded-2xl bg-black text-white text-sm"><Ticket className="h-4 w-4 mr-1"/>Entradas</a>
-          </div>
+  {/* Selectores de tema y fuente */}
+  <select
+    value={themeKey}
+    onChange={(e) => setThemeKey(e.target.value)}
+    className="hidden md:block text-sm border border-app bg-card rounded-xl px-2 py-1"
+    aria-label="Tema"
+  >
+    {Object.entries(themes).map(([k, v]) => (
+      <option key={k} value={k}>{v.label}</option>
+    ))}
+  </select>
+
+  <select
+    value={fontKey}
+    onChange={(e) => setFontKey(e.target.value)}
+    className="hidden md:block text-sm border border-app bg-card rounded-xl px-2 py-1"
+    aria-label="Tipografía"
+  >
+    {Object.entries(fonts).map(([k, v]) => (
+      <option key={k} value={k}>{v.label}</option>
+    ))}
+  </select>
+
+  {/* Botón entradas con color de marca dinámico */}
+  <a
+    href={BRAND.entradasLink}
+    className="inline-flex items-center px-3 py-2 rounded-2xl btn-brand text-sm"
+  >
+    <Ticket className="h-4 w-4 mr-1" /> Entradas
+  </a>
+</div>
+
         </div>
       </header>
 
