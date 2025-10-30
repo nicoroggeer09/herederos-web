@@ -328,12 +328,11 @@ export default function App() {
           <div>
             <h2 className="font-display text-2xl md:text-3xl font-extrabold">El proyecto</h2>
             <p className="mt-4 text-muted leading-relaxed">
-              Herederos Bar Folklórico nace para celebrar la música y la danza argentina con un espacio cálido, comida criolla y una programación pensada para que la peña se viva de verdad. Trabajamos con artistas locales y regionales, promovemos la participación del público y articulamos con escuelas de danza y ballets.
+              Herederos Bar Folklórico (Agregar Proyecto resumido).
             </p>
             <ul className="mt-4 text-muted list-disc pl-5 space-y-2">
               <li>Peñas todos los fines de semana</li>
-              <li>Gastronomía criolla: empanadas, pizzas, guisos y más</li>
-              <li>Convenios con ballets y artistas invitados</li>
+              <li>Gastronomía: empanadas, pizzas, choripan y más</li>
               <li>Eventos especiales y fechas patrias</li>
             </ul>
             <div className="mt-6 flex gap-3">
@@ -363,7 +362,7 @@ export default function App() {
                     <li>Bondiola / Papas / Hamburguesas</li>
                   </ul>
                 </div>
-                <p className="col-span-2 mt-2 text-xs text-muted">* Podés convertir esta tarjeta en un menú completo o linkear a un PDF/QR.</p>
+                <p className="col-span-2 mt-2 text-xs text-muted">* Posiblemente meta un QR para que la gente vea el menu completo</p>
               </div>
             </div>
           </div>
