@@ -1,12 +1,11 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
+import { themes, fonts } from "./theme.js";
 import {
   CalendarDays, MapPin, Phone, Instagram, Facebook, Music2, Ticket,
   ChevronLeft, ChevronRight, Images, Info, GalleryHorizontalEnd, Megaphone, ExternalLink
 } from "lucide-react";
-// QUITAR esta línea si usás esta opción:
-// import { themes, fonts } from "./theme.js";
+
 
 const themes = {
   day:   { className: "",            label: "Folklore Día" },
