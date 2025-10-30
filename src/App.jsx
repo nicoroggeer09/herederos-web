@@ -386,24 +386,21 @@ export default function App() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="py-14 bg-card border-t border-app">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold">Contacto</h2>
-            <p className="mt-2 text-muted">Reservas, prensa, sponsors y artistas.</p>
-            <div className="mt-4 space-y-2 text-sm">
-              <p className="flex items-center gap-2"><MapPin className="h-4 w-4" />{BRAND.direccion}</p>
-              <p className="flex items-center gap-2"><Phone className="h-4 w-4" />{BRAND.telefono}</p>
-            </div>
-            <div className="mt-4 flex gap-3">
-              <a href={BRAND.instagram} className="inline-flex items-center gap-2 text-muted hover:text-app text-sm"><Instagram className="h-4 w-4" />Instagram</a>
-              <a href={BRAND.facebook} className="inline-flex items-center gap-2 text-muted hover:text-app text-sm"><Facebook className="h-4 w-4" />Facebook</a>
-            </div>
-            <div className="mt-6 rounded-2xl bg-card p-4 border border-app text-sm text-muted">
-              <p className="font-semibold mb-1 text-app">Mapa</p>
-              <p>Insertá tu iframe de Google Maps aquí o un link directo.</p>
-            </div>
-          </div>
+      <div className="mt-6 rounded-2xl bg-neutral-50 p-4 border text-sm text-neutral-600">
+  <p className="font-semibold mb-1">Mapa</p>
+  <div className="rounded-lg overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps/@-36.8894674,-60.3371581,47m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D"
+      width="100%"
+      height="300"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
           <div className="rounded-2xl border border-app bg-card">
             <div className="p-4 border-b border-app">
               <div className="text-base font-semibold">Escribinos</div>
